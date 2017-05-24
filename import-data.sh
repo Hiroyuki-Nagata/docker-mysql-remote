@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# to install pv, it's necessary to update apt for the first time
+apt-get update
 apt-get install pv
 
 SOURCES=(`echo $IMPORT_SOURCES | tr -s '|' ' '`)
